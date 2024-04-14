@@ -1,0 +1,26 @@
+//Pseudocode to sort element of an array
+Start
+    Function bubbleSort(arr)
+        n=length of array
+        For i in from 0 to n-1
+            For j from 0 to n-i-1 
+                If arr[j] > arr[j+1]
+                    //swap if they are in wrong order
+                    swap arr[j] with arr[j+1]
+                EndIf
+            EndFor
+        EndFor
+    EndFunction
+    
+    // Main Function
+    Function main()
+        Declare arr[] as Integer
+
+        arr={64,12,45}
+
+        Print "Original array:",arr
+
+        Call bubbleSort(arr)
+
+        Print "\n\r Sorted array :",arr 
+    EndFunction
